@@ -1,6 +1,5 @@
 {
   "name": "news-app",
-  "homepage": "https://ananyab3100.github.io/news-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

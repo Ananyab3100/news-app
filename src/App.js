@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router , Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 import React, { Component } from 'react'
 import Nav from './components/Nav';
 import News from './components/News';
@@ -11,7 +11,7 @@ export default class App extends Component {
       <div>
         <Nav />
         <Routes>
-          <Route exact path='/'element={<News key='general' pageSize ={9} country='in' category='general'/>}/>
+          <Route  exact path='/'element={<News key='general' pageSize ={9} country='in' category='general'/>}/>
           <Route  path='/business' element={<News key='business' pageSize ={9} country='in' category='business'/>}/>
           <Route  path='/entertainment' element={<News key='entertainment' pageSize ={9} country='in' category='entertainment'/>}/>
           <Route  path='/general' element={<News key='general' pageSize ={9} country='in' category='general'/>}/>
